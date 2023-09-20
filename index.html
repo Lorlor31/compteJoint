@@ -30,14 +30,15 @@
 			<input type="number" id="depensesOurson" placeholder="0"> 
 		</div>
 		<div class="userInput">
-			<label for"depensesFee" id="depensesFeeText" placeholder="0" disabled="true"> Dépenses Fée :</label><span class="mdi mdi-magic-staff"></span>
-			<input type="number" placeholder="0" id="depensesFee"/>
+			<label for"depensesFee" id="depensesFeeText" placeholder="0" > Dépenses Fée :</label><span class="mdi mdi-magic-staff"></span>
+			<input type="number" placeholder="0" id="depensesFee disabled="true"/>
 		</div>
 	</form>
 	<p id="messageFinal"> Appuyer sur calculer pour savoir qui doit combien ! </p>
 	<button id="calculer"> Calculer ! </button>
 	<p> <span id="messageGlobal"> </span> </p>
-	<button id="reset"> Remettre la dette à zéro </button>
+	<button id="reset"> Annuler le dernier calcul </button>
+	<button id="resetAll"> Remettre la dette à zéro </button>
 	<div id="loading"></div>
 
 </div>

@@ -64,11 +64,20 @@ depensesOurson.addEventListener("input",
 )
 calculer.addEventListener("click",calculerDesResultats)
 
-reset.addEventListener("click",resetLocalStorage)
+resetAll.addEventListener("click",resetLocalStorage)
 
 function resetLocalStorage(){
     dette=0
     localStorage.setItem("dette",dette)
     localStorage.setItem("messageGlobal","Pas de dette en cours")
     messageGlobal.textContent="Pas de dette en cours"
+}
+
+function resetLastChanges(){
+    dette=dette-difference
+    localStorage.setItem("dette",dette)
+    messageGlobal.textContent= dette<0 
+    ? `En tout, Laure doit ${Math.abs(dette)} euros `
+    : `En tout, Jérôme doit ${Math.abs(dette)} euros `
+    localStorage.setItem("messageGlobal",messageGlobal.textContent)
 }
