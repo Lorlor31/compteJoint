@@ -3,7 +3,11 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    font-family: 'Rowdies', cursive;
+    color: rgb(255, 255, 255);
+    font-size: 2rem ;
 }
+
 #loading{
     position: fixed;
     top :32% ;
@@ -27,6 +31,11 @@ body{
     border-radius: 50%;
     z-index: 5;
 }
+
+#consigne{
+    font-style: italic;
+    text-align: center;
+}
 #wrapper{
     display: flex;
     flex-direction: column;
@@ -37,7 +46,7 @@ body{
     border-radius: 15px ;
     box-shadow: 1px 2px rgb(1, 1, 42);
     /* box-shadow: -1px -2px 5px rgb(164, 164, 176); */
-    font-size: 18px;
+    font-size: 1rem;
     /* margin : 5px 2px ; */
     margin: 8%;
     padding: 35px 5px ;
