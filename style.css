@@ -1,0 +1,137 @@
+body{
+    background-color: rgb(69, 69, 232);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#loading{
+    position: fixed;
+    top :32% ;
+    left : 46% ;
+    visibility: visible;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 217, 0, 0);
+    /* border : solid 5px gold; */
+    border-radius: 50%;
+    z-index: 5;
+}
+#loading-wrapper{
+    position: fixed;
+    top :32% ;
+    left : 46% ;
+    visibility: visible;
+    width: 110px;
+    height: 110px;
+    background: linear-gradient(#e66465, #9198e5);
+    border-radius: 50%;
+    z-index: 5;
+}
+#wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    border: solid 10px rgb(188, 188, 210);
+    border-radius: 15px ;
+    box-shadow: 1px 2px rgb(1, 1, 42);
+    /* box-shadow: -1px -2px 5px rgb(164, 164, 176); */
+    font-size: 18px;
+    /* margin : 5px 2px ; */
+    margin: 8%;
+    padding: 35px 5px ;
+    width: 40%;
+    height: 500px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+}
+
+.userInput {
+    margin: 1px;
+}
+
+#total{
+    color :blue ;
+}
+
+label {
+    font-family: 'Rowdies', cursive;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px rgb(14, 14, 21);
+}
+
+input{
+    border : gold solid 2px;
+}
+
+#messageFinal{
+    font-family: 'Rowdies', cursive;
+    font-size: smaller ;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px rgb(0, 0, 0);
+}
+
+#messageGlobal{
+    font-family: 'Rowdies', cursive;
+    font-size: smaller ;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px rgb(0, 0, 0);
+}
+
+button{
+    background-color: rgb(94, 94, 215);
+    border :solid 2px rgb(36, 36, 67) ;
+    box-shadow: 1px 1px  rgb(8, 8, 69);
+    border-radius: 5px ;
+    color: rgb(224, 215, 215);
+    font-family: 'Rowdies', cursive;
+    text-shadow: 1px 2px rgb(20, 19, 19);
+}
+
+button:hover{
+    background-color: rgb(135, 135, 227);
+    border :solid 2px rgb(2, 2, 63) ;
+    box-shadow: 1px 1px  rgb(118, 118, 125);
+    border-radius: 5px ;
+    color: rgb(0, 0, 0);
+    font-family: 'Rowdies', cursive;
+    text-shadow: 1px 1px rgb(238, 231, 231);
+}
+
+
+button:active{
+    background-color: rgb(135, 135, 227);
+    border :solid 2px rgb(2, 2, 63) ;
+    box-shadow: -1px -1px  rgb(8, 8, 69);
+    border-radius: 5px ;
+    color: rgb(0, 0, 0);
+    font-family: 'Rowdies', cursive;
+    text-shadow: 1px 1px rgb(82, 78, 78);
+}
+
+
+
+.mdi {
+    size: large ;
+}
+.mdi-cart{
+    color : green ;
+}
+
+.mdi-hamburger{
+    color :orange ;
+}
+
+.mdi-paw{
+    color : rgb(219, 128, 31) ;
+}
+
+.mdi-magic-staff{
+    color : rgb(222, 173, 199) ;
+}
