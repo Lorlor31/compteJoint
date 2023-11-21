@@ -7,6 +7,7 @@ let calculer =document.querySelector("#calculer")
 let reset =document.querySelector("#reset")
 let messageFinal =document.querySelector("#messageFinal")
 let messageGlobal =document.querySelector("#messageGlobal")
+let count=0
 
 let totalValue=0.0
 let appetizValue=0.0
@@ -51,6 +52,7 @@ function calculerDesResultats(){
     : `En tout, Jérôme doit ${Math.abs(dette)} euros `
 
     localStorage.setItem("messageGlobal",messageGlobal.textContent)
+    console.log("messageglobal est", messageGlobal )
 }
 
 total.addEventListener("input",
@@ -65,7 +67,7 @@ depensesOurson.addEventListener("input",
 calculer.addEventListener("click",calculerDesResultats)
 
 resetAll.addEventListener("click",resetLocalStorage)
-
+reset.addEventListener("click",resetLastChanges)
 function resetLocalStorage(){
     dette=0
     localStorage.setItem("dette",dette)
@@ -74,10 +76,15 @@ function resetLocalStorage(){
 }
 
 function resetLastChanges(){
+    if (count==1){}
+    else{
     dette=dette-difference
     localStorage.setItem("dette",dette)
     messageGlobal.textContent= dette<0 
     ? `En tout, Laure doit ${Math.abs(dette)} euros `
     : `En tout, Jérôme doit ${Math.abs(dette)} euros `
     localStorage.setItem("messageGlobal",messageGlobal.textContent)
+    count=1    
+    }
+    
 }
